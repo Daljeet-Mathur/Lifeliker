@@ -21,6 +21,15 @@
 </head>
 
 <body>
+    <!-- loder -->
+   <div id="loader-wrapper">
+    <div class="loader">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+  </div>
+    <!-- loder -->
 
     <!-- Navbar -->
     <div id="mainClass">
@@ -42,7 +51,7 @@
         </nav>
 
         <!-- Offcanvas Mobile Menu (Full Width) -->
-        <div class="offcanvas offcanvas-start offcanvas-full bg-dark text-white" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas offcanvas-start offcanvas-full bg-primary text-white" tabindex="-1" id="mobileMenu">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title">LIFELINKER</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
@@ -52,7 +61,7 @@
                 <a href="#" class="nav-link text-white">About</a>
                 <a href="#" class="nav-link text-white">Services</a>
                 <a href="#" class="nav-link text-white">Contact</a>
-                <button class="btn btn-primary mt-3">Sign Up</button>
+                <button class="btn btn-success mt-3">Sign Up</button>
             </div>
         </div>
 
@@ -86,7 +95,7 @@
             <div class="container">
                 <div class="row justify-content-between">
 
-                    <div class="bannerleft-text col-lg-6 col-md-12 col-sm-12">
+                    <div class="bannerleft-text col-lg-5 col-md-12 col-sm-12">
                         <div class="container py-5">
                             <h2 class=" mb-3">Manage Patient Data with IVF Software</h2>
                             <p class=" text-muted mb-5">Boost Your Clinic's Efficiency, Enhance Patient Care and
@@ -145,51 +154,53 @@
                         </div>
                     </div>
                     <!-- form -->
-                    <div class="formbox  text-center my-5 $blue-500 p-3 rounded  col-lg-5 col-md-12 col-sm-12 ">
-                        <h3 class="mb-4 text-white">Registration Form</h3>
-                        <form class="needs-validation" novalidate>
-                            <div class="row g-3">
-                                <div class="col-sm-12 col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="First Name" required>
-                                    <div class="invalid-feedback">
-                                        Please enter name.
+                    <div class="container col-lg-5 col-md-12 col-sm-12">
+                        <div class="formbox  text-center my-5 $blue-500 p-3 rounded  ">
+                            <h3 class="mb-4 text-white">Registration Form</h3>
+                            <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-sm-12 col-md-6 mb-3">
+                                        <input type="text" class="form-control" placeholder="First Name" required>
+                                        <div class="invalid-feedback">
+                                            Please enter name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6  mb-3">
+                                        <input type="text" class="form-control" placeholder="Last Name" required>
+                                        <div class="invalid-feedback">
+                                            Please enter last name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6  mb-3">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                        <div class="invalid-feedback">
+                                            Please enter email.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6  mb-3">
+                                        <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                        <div class="invalid-feedback">
+                                            Please enter phone number.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6  mb-3">
+                                        <input type="text" class="form-control" placeholder="City" required>
+                                        <div class="invalid-feedback">
+                                            Please enter city.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6  mb-3">
+                                        <input type="text" class="form-control" placeholder="Country" required>
+                                        <div class="invalid-feedback">
+                                            Please enter Country.
+                                        </div>
+                                    </div>
+                                    <div class="col-12  mb-3">
+                                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
                                     </div>
                                 </div>
-                                <div class="col-md-6  mb-3">
-                                    <input type="text" class="form-control" placeholder="Last Name" required>
-                                    <div class="invalid-feedback">
-                                        Please enter last name.
-                                    </div>
-                                </div>
-                                <div class="col-md-6  mb-3">
-                                    <input type="email" class="form-control" placeholder="Email" required>
-                                    <div class="invalid-feedback">
-                                        Please enter email.
-                                    </div>
-                                </div>
-                                <div class="col-md-6  mb-3">
-                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
-                                    <div class="invalid-feedback">
-                                        Please enter phone number.
-                                    </div>
-                                </div>
-                                <div class="col-md-6  mb-3">
-                                    <input type="text" class="form-control" placeholder="City" required>
-                                    <div class="invalid-feedback">
-                                        Please enter city.
-                                    </div>
-                                </div>
-                                <div class="col-md-6  mb-3">
-                                    <input type="text" class="form-control" placeholder="Country" required>
-                                    <div class="invalid-feedback">
-                                        Please enter Country.
-                                    </div>
-                                </div>
-                                <div class="col-12  mb-3">
-                                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     <!-- form -->
                 </div>
@@ -202,38 +213,37 @@
                         <div class="slider-text col-lg-3  col-md-3 col-sm-12 text-center sm-mt-2">
                             <p><span>Trusted</span> by Many IVF Clinic : </p>
                         </div>
-
                         <div class="slider-body col-lg-9 col-md-9 col-sm-12 ">
                             <div class="overflow-hidden">
                                 <div class="slider-track" id="sliderTrack">
                                     <div class="card-item">
                                         <div class="card text-center shadow">
-                                            <div class="card-body">img</div>
+                                            <div class="card-body"><img src="images/logo1.jpg" alt=""></div>
                                         </div>
                                     </div>
                                     <div class="card-item">
                                         <div class="card text-center shadow">
-                                            <div class="card-body">Card 2</div>
+                                            <div class="card-body"><img src="images/logo2.jpg" alt=""></div>
                                         </div>
                                     </div>
                                     <div class="card-item">
                                         <div class="card text-center shadow">
-                                            <div class="card-body">Card 3</div>
+                                            <div class="card-body"><img src="images/logo3.jpg" alt=""></div>
                                         </div>
                                     </div>
                                     <div class="card-item">
                                         <div class="card text-center shadow">
-                                            <div class="card-body">Card 4</div>
+                                            <div class="card-body"><img src="images/logo4.jpg" alt=""></div>
                                         </div>
                                     </div>
                                     <div class="card-item">
                                         <div class="card text-center shadow">
-                                            <div class="card-body">Card 5</div>
+                                            <div class="card-body"><img src="images/logo5.jpg" alt=""></div>
                                         </div>
                                     </div>
                                     <div class="card-item">
                                         <div class="card text-center shadow">
-                                            <div class="card-body">Card 6</div>
+                                            <div class="card-body"><img src="images/logo1.jpg" alt=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -305,7 +315,7 @@
                 </div>
             </div>
 
-            <!--  -->
+            <!--choose section  -->
             <div class="choose-section  mt-5 col-lg-7 col-12">
                 <h3 class="choose-title">Why Choose Us?</h3>
 
@@ -364,9 +374,11 @@
                 </div>
                 <!-- Item 5 -->
                 <div class="choose-item">
+
                     <img src="https://plus.unsplash.com/premium_photo-1673953510197-0950d951c6d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZG9jdG9yfGVufDB8fDB8fHww"
                         alt="Image 2">
-                    <div class="choose-text">
+
+                    <div class="choose-text ">
                         <h6>5. Detailed IVF Cycle Tracking</h6>
                         <p>
                             Track each stage of the IVF cycle, from egg retrieval to embryo transfer, with real-time
@@ -682,11 +694,11 @@
                         <h2 class="fw-bold text-primary mb-3 text-center" style="font-size: 24px;">Managing ART Made
                             Hassle Free
                         </h2>
-                        <div class="col-md-4 text-center mb-sm-3">
+                        <div class="col-md-4 text-center csm-mb">
                             <img src="https://cdn-icons-png.flaticon.com/512/9068/9068707.png" alt="Illustration"
                                 class="img-fluid" style="max-width: 200px;" />
                         </div>
-                        <div class="col-md-7 ms-lg-5">
+                        <div class="col-md-7 ms-lg-5 ">
                             <ul class="mb-3 ps-3" style="color: #444; font-size: 15px;">
                                 <li>Comprehensive and secure platform for managing IVF and reproductive health
                                     information.</li>
@@ -719,7 +731,7 @@
                                 Schedule Demo <i class="fa fa-arrow-right ms-2"></i>
                             </button>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 text-center csm-mt">
                             <img src="https://cdn-icons-png.flaticon.com/512/9068/9068692.png" alt="Illustration"
                                 class="img-fluid" style="max-width: 200px;" />
                         </div>
