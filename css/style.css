@@ -336,6 +336,18 @@
   transform: rotate(180deg);
 }
 
+  @media(max-width:768px){
+    .faq-section {
+    padding: 20px 0px;
+}
+.benifit-section {
+  
+    padding: 20px 0px;
+}
+.fw-bold {
+    font-size: 22px!important;
+}
+  }
 /* form */
 .golden{
     color: gold;
